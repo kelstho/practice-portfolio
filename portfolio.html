@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <title>Kelly Thompson</title>
-    </head>
-
-    <body>
-
-        <div class="page-header">
-            <section class="h1-nav">
-                <header class="header-1">
-                    <h1>Kelly Thompson</h1>
-                </header>
-                <nav>
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html" class="portfolio-button">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Kelly Thompson</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Dropdown Button -->
+            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Links</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="https://github.com/kelstho">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/kelly-thompson-5424541a1/">LinkedIn</a></li>
+                <li><a href="assets/resume.pdf">Resume</a></li>
+            </ul>
+            <!-- Portfolio Button -->
+            <a class="waves-effect waves-light btn" id="bio-btn" href="index.html">Bio</a>
         </div>
-
-        <div class="wrapper">
-            <section id="portfolio-content">
-                <header class="header-2">   
-                    <h2>Portfolio</h2>
-                </header>
-                <div class="clearfix">
-                    <div class="image">
-                        <img src="assets/images/hangman.jpg" alt="Hangman">
-                        <div class="text-block">
-                            <h3>Hangman</h3>
-                        </div>    
+    </nav>
+    <!-- Portfolio Container -->
+    <div class="container" id="portfolio-div">
+        <div class="row">
+            <div class="col s12">
+                <!-- Portfolio Title -->
+                <h2 class="header center" id="portfolio-title">Portfolio</h2>
+            </div>
+        </div>
+        <!-- Card Row -->
+        <div class="row">
+            <!-- Password Generator -->
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/password.png">
                     </div>
-                    <div class="image">
-                        <img src="assets/images/rpg.jpg" alt="RPG">
-                        <div class="text-block">
-                            <h3>RPG</h3>
-                        </div>
+                    <div class="card-content">
+                        <p>Web application that generates a random password based on user input.<br><br>
+                        <a href="https://github.com/kelstho/password-generator">Github Repo</a></p>
                     </div>
-                    <div class="image">
-                        <img src="assets/images/trivia.jpg" alt="Trivia">
-                        <div class="text-block">
-                            <h3>Trivia Game</h3>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="assets/images/rutgers_info.jpg" alt="Rutgers Info Widget">
-                        <div class="text-block">
-                            <h3>Rutgers Info Widget</h3>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="assets/images/rock_paper_scissors.jpg" alt="Rock Paper Scissors">
-                        <div class="text-block">
-                            <h3>Rock Paper Scissors</h3>
-                        </div>
+                    <div class="card-action">
+                        <a href="https://kelstho.github.io/password-generator/">Password Generator</a>
                     </div>
                 </div>
-            </section>
+            </div>
+            <!-- Project 1 -->
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/trailmix.png">
+                    </div>
+                    <div class="card-content">
+                        <p>Web application that locates nearest cycling trails based on user input, then automatically locates the restaurants that are closest to the end of the trail.<br><br>
+                        <a href="https://github.com/KevinNgo-Creator/Project-1">Github Repo</a></p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://kevinngo-creator.github.io/Project-1/">Trail Mix</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Weather Dashboard -->
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/weather.png">
+                    </div>
+                    <div class="card-content">
+                        <p>Web application that shows current and future weather conditions for any user-selected city.<br><br>
+                        <a href="https://github.com/kelstho/weather-dashboard">Github Repo</a></p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://kelstho.github.io/weather-dashboard/">Weather Dashboard</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <footer>
-            Copyright &copy;
-        </footer>
-
-    </body>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
